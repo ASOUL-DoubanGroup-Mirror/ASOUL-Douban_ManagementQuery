@@ -33,7 +33,7 @@ app.use("/", express.static(path.join(__dirname, "frontend")));
 app.get("/Fuzzy/:str", (req, res) => {
   let str = req.params.str;
 
-  let sql = `SELECT * FROM Statistic WHERE author_name like '%${str}%' or ref_storge like '%${str}%' or reply_text like '%${str}%' COLLATE NOCASE`
+  let sql = `SELECT * FROM Statistic WHERE author_name like '%${str}%' or ref_storge like '%${str}%' or reply_text like '%${str}%' or author_id = '${str}' or author_uid = '${str}' or reply_time like '${str}' COLLATE NOCASE`
 
   db.all(sql,(err,rows)=>{
     if(err){

@@ -15,7 +15,7 @@ const comments_data = ref([])
 
 const data_filter = computed(() => {
   const fliter_text = fliter.value
-  return comments_data.value.filter(ele => ele.reply_text.includes(fliter_text) || ele.author_name.includes(fliter_text) || ele.reply_time.includes(fliter_text))
+  return comments_data.value.filter(ele => ele.reply_text.includes(fliter_text) || ele.author_name.includes(fliter_text) || ele.reply_time.includes(fliter_text) || ele.author_id.includes(fliter_text) || ele.author_uid.includes(fliter_text))
 })
 
 function submitQuery() {
