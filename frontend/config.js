@@ -1,0 +1,1 @@
+window._TEST_SERVER = "http://localhost:3000"

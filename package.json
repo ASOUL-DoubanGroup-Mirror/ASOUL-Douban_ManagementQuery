@@ -1,0 +1,19 @@
+{
+  "name": "asoul-douban_managementquery",
+  "version": "1.0.0",
+  "description": "Query management data of Douban Group ASoul",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "keywords": [
+    "asoul",
+    "douban"
+  ],
+  "author": "Wendaolee",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  }
+}
